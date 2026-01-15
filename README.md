@@ -36,7 +36,7 @@ Using an API token is **recommended** over username/password authentication.
 - Least-privilege friendly
 
 See:
-docs/prtg-api-token.md
+[docs/prtg-api-token.md](docs/prtg-api-token.md)
 
 ---
 
