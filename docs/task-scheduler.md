@@ -16,19 +16,16 @@ which breaks:
 - Network access
 - API calls
 
-## Action Tab
+## How to setup Task scheduler
 
-Program:
-```bash
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-```
-Arguments:
-```bash
--ExecutionPolicy Bypass -NonInteractive -File "C:\Program Files (x86)\PRTG Network Monitor\notifications\exe\GraphAutomation.ps1"
-```
-Start in:
-```bash
-C:\Program Files (x86)\PRTG Network Monitor\notifications\exe
-```
+1. On windows search bar, type "Task Scheduler".
+
+2. To create basic task, right click on the **Task Scheduler Library** and click **Create Basic Task...**.
+
+<p align="center">
+  <img src="screenshots/Create basic task.png" alt="Create basic task"><br>
+</p>
+
+3. 
 
 
