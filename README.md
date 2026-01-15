@@ -25,6 +25,14 @@ It is designed to run **unattended via Windows Task Scheduler** on a PRTG server
 
 ---
 
+## 📲 Telegram Bot Setup
+
+This project sends graphs to Telegram using a bot.
+
+Follow the full setup guide: [docs/telegram-bot-setup.md](docs/telegram-bot-setup.md)
+
+---
+
 ## 🔐 PRTG API Token
 
 Using an API token is **recommended** over username/password authentication.
@@ -35,15 +43,13 @@ Using an API token is **recommended** over username/password authentication.
 - Works reliably with automation
 - Least-privilege friendly
 
-See:
-[docs/prtg-api-token.md](docs/prtg-api-token.md)
+Follow the full setup guide: [docs/prtg-api-token.md](docs/prtg-api-token.md)
 
 ---
 
 ## ⚙️ Configuration
 
-Edit the following variables inside:
-[scripts/GraphAutomation.ps1](scripts/GraphAutomation.ps1)
+Edit the following variables inside: [scripts/GraphAutomation.ps1](scripts/GraphAutomation.ps1)
 ```powershell
 # PRTG
 $BaseURL  = "https://example.com"
@@ -87,7 +93,7 @@ C:\Program Files (x86)\PRTG Network Monitor\notifications\exe
 📌 Do **NOT** check “Do not store password”
 This will cause PowerShell, API calls, and Telegram sending to fail silently.
 
-See: [docs/task-scheduler.md](docs/task-scheduler.md)
+Follow the full setup guide: [docs/task-scheduler.md](docs/task-scheduler.md)
 
 ---
 
