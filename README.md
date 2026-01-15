@@ -43,12 +43,15 @@ See:
 ## ⚙️ Configuration
 
 Edit the following variables inside:
-scripts/GraphAutomation.ps1
+[scripts/GraphAutomation.ps1](scripts/GraphAutomation.ps1)
 ```powershell
-$PRTGServer  = "https://prtg.example.com"
-$APIToken   = "PRTG_API_TOKEN"
-$BotToken   = "TELEGRAM_BOT_TOKEN"
-$ChatID     = "TELEGRAM_CHAT_ID"
+# PRTG
+$BaseURL  = "https://example.com"
+$ApiToken = $env:PRTG_API_TOKEN
+
+# Telegram
+$BotToken = $env:TELEGRAM_BOT_TOKEN
+$ChatID   = $env:TELEGRAM_CHAT_ID
 ```
 
 ---
@@ -84,7 +87,7 @@ C:\Program Files (x86)\PRTG Network Monitor\notifications\exe
 📌 Do **NOT** check “Do not store password”
 This will cause PowerShell, API calls, and Telegram sending to fail silently.
 
-See: docs/task-scheduler.md
+See: [docs/task-scheduler.md](docs/task-scheduler.md)
 
 ---
 
